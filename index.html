@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Cahro</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho__logoTitulo">
+                <img src="assets/image 1.png" alt="Logo da AluraGeek" class="cabecalho__logo">
+                <h1 class="cabecalho__titulo">Loja Cahro</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="main__meusProdutos">
+            <h1>Meus Produtos:</h1>
+
+            <ul class="produtos__container" alt="produtos Cahro" data-lista>
+
+            </ul>
+                
+                <p class="no-products" style="display: none;">Nenhum produto foi adicionado</p>
+            </div>
+        </section>
+
+        <section class="main__adicionaProdutos">
+            <h1>Adicionar Produto:</h1>
+            <form class="formulario" data-formulario>
+                <div>
+                    <input id="nome" class="campo-nome" name="nome" required placeholder="nome..." data-nome />
+                </div>
+
+                <div>
+                    <input id="valor" class="campo-valor" name="valor" required placeholder="valor..." data-valor />
+                </div>
+
+                <div>
+                    <input id="imagem" class="campo-imagem" name="imagem" required placeholder="imagem..." data-imagem />
+                </div>
+
+                <div class="botoes">
+                    <button class="botao__guardar" type="submit">Guardar</button>
+                    <button class="botao__limpar" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="cabecalho">
+            <div class="cabecalho__logoTitulo">
+                <img src="assets/image 1.png" alt="Logo da AluraGeek" class="cabecalho__logo">
+                <h1 class="cabecalho__titulo">Loja Cahro</h1>
+            </div>
+            <p class="cabecalho__subtitulo">DESENVOLVIDO POR ANDRÉS G. NAKAGAWA</p>
+            <p class="cabecalho__texto">ALURA LATAM - 2024</p>
+        </div>
+    </footer>
+
+    <script src="./js/mostrarProdutos.js" type="module"></script>
+    <script src="./js/criarProduto.js" type="module"></script>
+</body>
+
+</html>

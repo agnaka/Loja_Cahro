@@ -1,0 +1,64 @@
+{
+  "produtos": [
+    {
+      "nome": "Caderno Cookie",
+      "preco": "80",
+      "imagem": "assets\\C-caderno-cookie.jpg",
+      "id": 1
+    },
+    {
+      "nome": "Caderno Raposa",
+      "preco": "75",
+      "imagem": "assets\\C-Caderno-raposa.jpg",
+      "id": 2
+    },
+    {
+      "nome": "Bloco Coelho",
+      "preco": "35",
+      "imagem": "assets\\C-block-coelho.jpg",
+      "id": 3
+    },
+    {
+      "nome": "Bloco Menina",
+      "preco": "35",
+      "imagem": "assets\\C-block-menina.jpg",
+      "id": 4
+    },
+    {
+      "nome": "Adesivo Menina",
+      "preco": "20",
+      "imagem": "assets\\C-adesivo-menina.jpg",
+      "id": 5
+    },
+    {
+      "nome": "Adesivo Corvo",
+      "preco": "35",
+      "imagem": "assets\\C-adesivo-Corvo.jpg",
+      "id": 6
+    },
+    {
+      "nome": "Apoia copos",
+      "preco": "95",
+      "imagem": "assets\\C-coster-madeira.jpg",
+      "id": 7
+    },
+    {
+      "nome": "Lego Argentina",
+      "preco": "280",
+      "imagem": "assets\\Boca-lego.jpg",
+      "id": 8
+    },
+    {
+      "nome": "Lego Argentina",
+      "preco": "280",
+      "imagem": "assets\\andres-lego.jpg",
+      "id": 9
+    },
+    {
+      "nome": "Postal Chiayochan",
+      "preco": "60",
+      "imagem": "assets\\C-postal-chiyochan.jpg",
+      "id": 10
+    }
+  ]
+}

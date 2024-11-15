@@ -1,0 +1,222 @@
+/* Importando as fontes "Press Start 2P" e "IBM Plex Mono" */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+:root {
+    --cor-primaria: #5300C8;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #000000;
+    --cor-quaternaria: #03318C;
+    --cor-hover: #272727;
+
+    --fonte-titulos: 'Press Start 2P', sans-serif;
+    --fonte-texto: 'IBM Plex Mono', sans-serif;
+}
+
+* {
+    font-family: var(--fonte-titulo);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--fonte-titulos);
+    font-size: 24px;
+}
+
+h2 {
+    font-family: var(--fonte-titulos);
+    font-size: 24px;
+}
+/* ESTILOS DO HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    /* position: fixed; se deixo, não mostra o main*/
+    top: 0;
+    height: 96px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 2;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-secundaria);
+    font-size: 24px;
+}
+
+.cabecalho__logoTitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+.cabecalho__subtitulo {
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.cabecalho__texto {
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+/* ESTILOS DO MAIN */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-terciaria);
+}
+
+.main__meusProdutos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    color: var(--cor-terciaria);
+}
+
+.produtos__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: var(--cor-terciaria);
+}
+
+input {
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    width: 80%;
+    height: 58px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-color: var(--cor-quaternaria);
+    border-width: 3px;
+    border-radius: 30px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    
+}
+
+button {
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    font-weight: 400;
+    width: 188px;
+    height: 55px;
+    padding: 10px 20px;
+    border-color: var(--cor-quaternaria);
+    border-width: 3px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao__guardar {
+    
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-secundaria);
+    margin-right: 13px;
+}
+
+.botao__limpar {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quaternaria);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    /* position: fixed; se deixo, não mostra o main*/
+    bottom: 0;
+    height: 232px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 2;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-secundaria);
+    font-size: 24px;
+}
+
+
+/* .main__adicionaProdutos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 472px;
+    height: 100%;
+    padding: 20px;
+    color: var(--cor-terciaria);
+}
+
+.main__meusProdutos__produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50vh;
+    overflow-y: auto;
+} */

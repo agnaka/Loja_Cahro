@@ -89,12 +89,6 @@
       "preco": "35",
       "imagem": "assets\\C-postal-menina2.jpg",
       "id": 20
-    },
-    {
-      "nome": "Lego Argentina",
-      "preco": "280",
-      "imagem": "assets\\andres-lego.jpg",
-      "id": 21
     }
   ]
 }

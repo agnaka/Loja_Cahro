@@ -1,12 +1,6 @@
 {
   "produtos": [
     {
-      "nome": "Caderno Cookie",
-      "preco": "80",
-      "imagem": "assets\\C-caderno-cookie.jpg",
-      "id": 1
-    },
-    {
       "nome": "Caderno Raposa",
       "preco": "75",
       "imagem": "assets\\C-Caderno-raposa.jpg",
@@ -43,22 +37,58 @@
       "id": 7
     },
     {
-      "nome": "Lego Argentina",
-      "preco": "280",
-      "imagem": "assets\\Boca-lego.jpg",
-      "id": 8
+      "nome": "Caderno Cookie",
+      "preco": "80",
+      "imagem": "assets\\C-caderno-cookie.jpg",
+      "id": 11
     },
     {
-      "nome": "Lego Argentina",
-      "preco": "280",
-      "imagem": "assets\\andres-lego.jpg",
-      "id": 9
+      "nome": "Ecobag azul marinho",
+      "preco": "65",
+      "imagem": "assets\\C-ecobag-preta.jpg",
+      "id": 12
     },
     {
-      "nome": "Postal Chiayochan",
-      "preco": "60",
+      "nome": "Posta",
+      "preco": "35",
       "imagem": "assets\\C-postal-chiyochan.jpg",
-      "id": 10
+      "id": 14
+    },
+    {
+      "nome": "Caderno Cookie em galho",
+      "preco": "80",
+      "imagem": "assets\\C-caderno-arvore.jpg",
+      "id": 15
+    },
+    {
+      "nome": "Chaveiro Cookie",
+      "preco": "60",
+      "imagem": "assets\\C-chaveiro-cookie_capivara.jpg",
+      "id": 16
+    },
+    {
+      "nome": "Chaveiro Halloween",
+      "preco": "60",
+      "imagem": "assets\\C-chaveiro-halloween.jpg",
+      "id": 17
+    },
+    {
+      "nome": "Botton Capivara",
+      "preco": "45",
+      "imagem": "assets\\C-broche-capivara.jpg",
+      "id": 18
+    },
+    {
+      "nome": "Postal Menina",
+      "preco": "35",
+      "imagem": "assets\\C-postal-menina1.jpg",
+      "id": 19
+    },
+    {
+      "nome": "Postal Menina Boné",
+      "preco": "35",
+      "imagem": "assets\\C-postal-menina2.jpg",
+      "id": 20
     }
   ]
 }

@@ -1,16 +1,17 @@
 /* Importando as fontes "Press Start 2P" e "IBM Plex Mono" */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
 
 :root {
-    --cor-primaria: #5300C8;
+    --cor-primaria: #3C557D;
     --cor-secundaria: #FFFFFF;
     --cor-terciaria: #000000;
     --cor-quaternaria: #03318C;
+    --cor-card: #EDEBD7;
     --cor-hover: #272727;
 
-    --fonte-titulos: 'Press Start 2P', sans-serif;
+    --fonte-titulos: 'Lato', sans-serif;
     --fonte-texto: 'IBM Plex Mono', sans-serif;
 }
 
@@ -24,10 +25,11 @@
 
 li {
     list-style: none;
+    margin-bottom: 60px;
 }
 
 body {
-    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-titulos);
     position: relative;
     width: 100%;
     height: 100vh;
@@ -40,7 +42,7 @@ body {
 
 h1 {
     font-family: var(--fonte-titulos);
-    font-size: 24px;
+    font-size: 32px;
 }
 
 h2 {
@@ -55,15 +57,22 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--cor-primaria);
-    /* position: fixed; se deixo, não mostra o main*/
+    position: fixed; 
     top: 0;
     height: 96px;
     width: 100%;
     padding: 0 25px;
-    z-index: 2;
     font-family: var(--fonte-titulos);
     color: var(--cor-secundaria);
     font-size: 24px;
+    overflow: auto;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cabecalho__logoTitulo {
@@ -71,19 +80,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
-}
-.cabecalho__subtitulo {
-    font-family: var(--fonte-texto);
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 0px;
-}
-
-.cabecalho__texto {
-    font-family: var(--fonte-texto);
-    font-size: 16px;
-    font-weight: 100;
-    margin-top: 10px;
+    gap: 20px;
 }
 
 /* ESTILOS DO MAIN */
@@ -93,9 +90,13 @@ main {
     justify-content: space-between;
     /* align-items: center; */
     background-color: var(--cor-secundaria);
-    padding: 20px;
+    padding: 30px;
     font-family: var(--fonte-texto);
     color: var(--cor-terciaria);
+}
+
+.main__subtitulo {
+    margin: 40px;
 }
 
 .main__meusProdutos {
@@ -104,7 +105,7 @@ main {
     justify-content: space-between;
     width: 60%;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
     color: var(--cor-terciaria);
 }
 
@@ -112,38 +113,100 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow-y: auto;
+    height: 65vh;
+
+}
+
+.produto__item {
+    flex-grow: 1;
+    height: 258px;
+    width: 198px;
+    margin-bottom: 60px;
 }
 
 .produto {
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px;
+    margin: 10px ;
     border-radius: 5px;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-}
-.produto img {
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: var(--cor-card);
 }
 
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 0px;
+}
+
+.produto__nome {
+    font-size: 15px;
+    font-style: bold;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.card__value {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card__preco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;    
+    font-weight: 600;
+}
+
+.produto__imagem {
+    width: 100%;
+    height: 174px; 
+}
+
+.produto__imagem__trash {
+    width: 24px;
+    height: 24px; 
+}
+
+.produto__imagem__trash:hover {
+    cursor: pointer;
+    transform: scale(1.3); 
+    transition: transform 0.2s;
+}
+
+.main__adicionaProdutos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+    color: var(--cor-terciaria);
+}
 .formulario {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 0px;
     color: var(--cor-terciaria);
 }
 
 input {
     font-family: var(--fonte-texto);
     font-size: 20px;
-    width: 80%;
+    width: 100%;
     height: 58px;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-bottom: 40px;
     border-color: var(--cor-quaternaria);
     border-width: 3px;
     border-radius: 30px;
@@ -152,8 +215,7 @@ input {
 .botoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    width: 90%;
+    width: 100%;
     height: 100%;
     
 }
@@ -190,33 +252,60 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: var(--cor-primaria);
-    /* position: fixed; se deixo, não mostra o main*/
+    /* position: fixed; */
     bottom: 0;
-    height: 232px;
+    height: 160px;
     width: 100%;
     padding: 0 25px;
-    z-index: 2;
     font-family: var(--fonte-titulos);
     color: var(--cor-secundaria);
     font-size: 24px;
 }
 
-
-/* .main__adicionaProdutos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 472px;
-    height: 100%;
-    padding: 20px;
-    color: var(--cor-terciaria);
+.footer__subtitulo {
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
 }
 
-.main__meusProdutos__produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 50vh;
-    overflow-y: auto;
-} */
+.footer__texto {
+    font-family: var(--fonte-texto);
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 1000px) {
+    /* body{
+        width: 450px;
+    } */
+
+    main {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .main__adicionaProdutos {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        margin-top: 40px;
+        color: var(--cor-terciaria);
+    }
+
+    .main__meusProdutos {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        color: var(--cor-terciaria);
+    }
+
+    .produto {
+        padding: 5px;
+    }
+}

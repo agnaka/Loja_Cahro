@@ -1,94 +1,82 @@
 {
   "produtos": [
     {
-      "nome": "Caderno Raposa",
-      "preco": "75",
-      "imagem": "assets\\C-Caderno-raposa.jpg",
+      "nome": "Cookietos Planner A5",
+      "preco": "150,00",
+      "imagem": "assets\\C-Cookietos-Planner.jpg",
+      "id": 1
+    },
+    {
+      "nome": "Ecobag Cookienho azul",
+      "preco": "50,00",
+      "imagem": "assets\\C-ecobag-azul.jpg",
       "id": 2
     },
     {
-      "nome": "Bloco Coelho",
-      "preco": "35",
-      "imagem": "assets\\C-block-coelho.jpg",
+      "nome": "Porta copos Cookie",
+      "preco": "35,00",
+      "imagem": "assets\\C-coster-madeira.jpg",
       "id": 3
     },
     {
-      "nome": "Bloco Menina",
-      "preco": "35",
-      "imagem": "assets\\C-block-menina.jpg",
+      "nome": "Caderno A5 Kitsune",
+      "preco": "30,00",
+      "imagem": "assets\\C-Caderno-raposa.jpg",
       "id": 4
     },
     {
-      "nome": "Adesivo Menina",
-      "preco": "20",
-      "imagem": "assets\\C-adesivo-menina.jpg",
+      "nome": "Chaveiro Corvo",
+      "preco": "20,00",
+      "imagem": "assets\\C-chaveiro-halloween.jpg",
       "id": 5
     },
     {
-      "nome": "Adesivo Corvo",
-      "preco": "35",
-      "imagem": "assets\\C-adesivo-Corvo.jpg",
+      "nome": "Bloco de notas Universo",
+      "preco": "12,00",
+      "imagem": "assets\\C-block-menina.jpg",
       "id": 6
     },
     {
-      "nome": "Apoia copos",
-      "preco": "95",
-      "imagem": "assets\\C-coster-madeira.jpg",
+      "nome": "Postacard dragão",
+      "preco": "10,00",
+      "imagem": "assets\\C-Postcard-dragao.jpg",
       "id": 7
     },
     {
-      "nome": "Caderno Cookie",
-      "preco": "80",
-      "imagem": "assets\\C-caderno-cookie.jpg",
+      "nome": "Postacard Matsuri",
+      "preco": "10,00",
+      "imagem": "assets\\C-postcard-Matsuri.jpg",
+      "id": 8
+    },
+    {
+      "nome": "Postcard Chiyochan",
+      "preco": "10,00",
+      "imagem": "assets\\C-Postacard-chiyochan.jpg",
+      "id": 9
+    },
+    {
+      "nome": "Cartela Cookienho ponkan",
+      "preco": "12,00",
+      "imagem": "assets\\C-cartela-cookie.jpg",
+      "id": 10
+    },
+    {
+      "nome": "Adesivo Corvo aquarela",
+      "preco": "8,00",
+      "imagem": "assets\\C-adesivo-Corvo.jpg",
       "id": 11
     },
     {
-      "nome": "Ecobag azul marinho",
-      "preco": "65",
-      "imagem": "assets\\C-ecobag-preta.jpg",
+      "nome": "Adesivo Frieren",
+      "preco": "10,00",
+      "imagem": "assets\\C-adesivo-menina.jpg",
       "id": 12
     },
     {
-      "nome": "Posta",
-      "preco": "35",
-      "imagem": "assets\\C-postal-chiyochan.jpg",
-      "id": 14
-    },
-    {
-      "nome": "Caderno Cookie em galho",
-      "preco": "80",
-      "imagem": "assets\\C-caderno-arvore.jpg",
-      "id": 15
-    },
-    {
-      "nome": "Chaveiro Cookie",
-      "preco": "60",
-      "imagem": "assets\\C-chaveiro-cookie_capivara.jpg",
-      "id": 16
-    },
-    {
-      "nome": "Chaveiro Halloween",
-      "preco": "60",
-      "imagem": "assets\\C-chaveiro-halloween.jpg",
-      "id": 17
-    },
-    {
-      "nome": "Botton Capivara",
-      "preco": "45",
-      "imagem": "assets\\C-broche-capivara.jpg",
-      "id": 18
-    },
-    {
-      "nome": "Postal Menina",
-      "preco": "35",
-      "imagem": "assets\\C-postal-menina1.jpg",
-      "id": 19
-    },
-    {
-      "nome": "Postal Menina Boné",
-      "preco": "35",
-      "imagem": "assets\\C-postal-menina2.jpg",
-      "id": 20
+      "nome": "Botton Capivarita",
+      "preco": "8,00",
+      "imagem": "assets\\C-botton-capivarita.jpg",
+      "id": 13
     }
   ]
 }

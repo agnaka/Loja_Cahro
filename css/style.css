@@ -1,6 +1,3 @@
-/* Importando as fontes "Press Start 2P" e "IBM Plex Mono" */
-/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
 
 :root {
@@ -88,7 +85,6 @@ header {
 main {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     background-color: var(--cor-secundaria);
     padding: 30px;
     font-family: var(--fonte-texto);
@@ -103,7 +99,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
     height: 100%;
     padding: 40px;
     color: var(--cor-terciaria);
@@ -114,8 +110,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     overflow-y: auto;
-    height: 65vh;
-
+    height: 65vh;        
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .produto__item {
@@ -123,6 +119,7 @@ main {
     height: 258px;
     width: 198px;
     margin-bottom: 60px;
+    flex-basis: 198px;
 }
 
 .produto {
@@ -186,7 +183,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 35%;
     height: 100%;
     padding: 40px;
     color: var(--cor-terciaria);
@@ -199,7 +196,10 @@ main {
     padding: 0px;
     color: var(--cor-terciaria);
 }
-
+input:focus {
+    box-shadow: 0 0 7px var(--cor-primaria);
+    outline: none;
+}
 input {
     font-family: var(--fonte-texto);
     font-size: 20px;
@@ -210,6 +210,7 @@ input {
     border-color: var(--cor-quaternaria);
     border-width: 3px;
     border-radius: 30px;
+    border-style: solid; /* sem o border-style as linhas superior e diretita não assumiam a cor quaternaria */
 }
 
 .botoes {
@@ -217,6 +218,7 @@ input {
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    
     
 }
 
@@ -238,12 +240,24 @@ button {
     
     background-color: var(--cor-quaternaria);
     color: var(--cor-secundaria);
-    margin-right: 13px;
+    margin-right: 13px;    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botao__guardar:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s;
 }
 
 .botao__limpar {
     background-color: var(--cor-secundaria);
     color: var(--cor-quaternaria);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.botao__limpar:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s;
 }
 
 footer {
@@ -252,7 +266,6 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: var(--cor-primaria);
-    /* position: fixed; */
     bottom: 0;
     height: 160px;
     width: 100%;
@@ -277,13 +290,9 @@ footer {
 }
 
 
-
 /*RESPONSIVIDADE*/
 
 @media (max-width: 1000px) {
-    /* body{
-        width: 450px;
-    } */
 
     main {
         flex-direction: column-reverse;
